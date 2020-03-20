@@ -29,10 +29,7 @@ a {
   margin: auto; }
 
 .base-grid {
-  height: 100%;
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: 100px auto 100px; }
+  height: 100%; }
 
 .clear {
   clear: both; }
