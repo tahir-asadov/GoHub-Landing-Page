@@ -297,13 +297,14 @@ label {
     padding: 50px; }
 
 /* ==========================================================================
-[Content]
-========================================================================== */
-/* ==========================================================================
 [Footer]
 ========================================================================== */
 .band-footer {
-  background: #fff; }
+  background: #fbfaff;
+  padding: 150px 0; }
+  .band-footer .footer-item {
+    width: 50%;
+    float: left; }
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
