@@ -683,6 +683,41 @@ label {
     width: 50%;
     float: left; }
 
+/* ==========================================================================
+[Bottom]
+========================================================================== */
+.band-bottom {
+  background: #212240;
+  color: #dedfe4;
+  padding: 100px 0; }
+  .band-bottom a {
+    color: #dedfe4;
+    text-decoration: none; }
+  .band-bottom ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .band-bottom ul li a {
+      display: block;
+      line-height: 50px; }
+  .band-bottom .bottom-item {
+    width: 25%;
+    float: left; }
+  .band-bottom .bottom-left {
+    padding-top: 50px;
+    width: 30%;
+    float: left;
+    color: #555476; }
+    .band-bottom .bottom-left a {
+      color: #555476; }
+  .band-bottom .bottom-right {
+    padding-top: 50px;
+    width: 30%;
+    float: right;
+    color: #555476; }
+    .band-bottom .bottom-right a {
+      color: #555476; }
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */

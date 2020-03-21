@@ -317,6 +317,52 @@ label {
 }
 
 
+/* ==========================================================================
+[Bottom]
+========================================================================== */
+.band-bottom {
+  background: $bottom_bg_color;
+  color: #dedfe4;
+  padding: 100px 0;
+  a {
+    color: #dedfe4;
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      a {
+        display: block;
+        line-height: 50px;
+      }
+    }
+  }
+  .bottom-item {
+    width: 25%;
+    float: left;
+  }
+  .bottom-left {
+    padding-top: 50px;
+    width: 30%;
+    float: left;
+    color: #555476;
+    a {
+      color: #555476;
+    }
+  }
+  .bottom-right {
+    padding-top: 50px;
+    width: 30%;
+    float: right;
+    color: #555476;
+    a {
+      color: #555476;
+    }
+  }
+}
+
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
