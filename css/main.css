@@ -9,7 +9,11 @@ body {
   margin: 0;
   font-family: "Sen", sans-serif;
   font-size: 19px;
-  color: #525F7F; }
+  color: #525F7F;
+  background-image: url("./../img/header-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100px 0px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Sen", sans-serif;
@@ -213,8 +217,28 @@ label {
 /* ==========================================================================
 [Header]
 ========================================================================== */
-.band-header {
-  background-color: #fff; }
+.band-header .container {
+  margin-top: 50px; }
+  .band-header .container .logo {
+    float: left; }
+  .band-header .container .menu {
+    float: right; }
+    .band-header .container .menu ul {
+      margin: 0;
+      padding: 0; }
+      .band-header .container .menu ul li {
+        list-style: none;
+        display: inline; }
+        .band-header .container .menu ul li a {
+          display: inline-block;
+          padding: 10px 20px;
+          line-height: 20px;
+          text-decoration: none;
+          margin-left: 20px;
+          font-weight: bold; }
+  .band-header .container .header-left {
+    margin-top: 250px;
+    width: 50%; }
 
 /* ==========================================================================
 [Content]

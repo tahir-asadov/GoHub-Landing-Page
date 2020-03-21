@@ -9,6 +9,10 @@ body {
   font-family: $primary_font_family;
   font-size: 19px;
   color: $primary_color_light;
+  background-image: url('./../img/header-bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary_font_family;
@@ -189,8 +193,34 @@ label {
 [Header]
 ========================================================================== */
 .band-header {
-  background-color: $header_bg_color;
   .container {
+    margin-top: 50px;
+    .logo {
+      float: left;
+    }
+    .menu {
+      float: right;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline;
+          a {
+            display: inline-block;
+            padding: 10px 20px;
+            line-height: 20px;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .header-left {
+      margin-top: 250px;
+      width: 50%;
+    }
   }
 }
 
