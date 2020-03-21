@@ -420,7 +420,7 @@ input[type="search"],
 input[type="password"],
 input[type="text"],
 textarea {
-  box-shadow: 0 0 23px -7px #845cff;
+  box-shadow: 0 0 23px -7px #845CFF;
   padding: 15px 30px;
   margin: 5px 5px 5px 0;
   border: none;
@@ -436,10 +436,10 @@ textarea {
   border: none;
   text-decoration: none;
   font-size: 19px;
-  box-shadow: 0 0 11px -1px #845cff;
+  box-shadow: 0 0 11px -1px #845CFF;
   cursor: pointer; }
   [type="submit"]:active, [type="button"]:active, button:active, .button:active {
-    box-shadow: 0 0 11px -3px #845cff; }
+    box-shadow: 0 0 11px -3px #845CFF; }
 
 label {
   font-weight: bold; }

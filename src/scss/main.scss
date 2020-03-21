@@ -52,7 +52,7 @@ input[type="search"],
 input[type="password"],
 input[type="text"],
 textarea {
-  box-shadow: 0 0 23px -7px #845cff;
+  box-shadow: 0 0 23px -7px  $secondary_color;
   padding: 15px 30px;
   margin: 5px 5px 5px 0;
   border: none;
@@ -62,16 +62,16 @@ textarea {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px 5px 5px 0;
-  background-color:#845CFF;
+  background-color: $secondary_color;
   color: white;
   border-radius: 3px;
   border: none;
   text-decoration: none;
   font-size:19px;
-  box-shadow: 0 0 11px -1px #845cff;
+  box-shadow: 0 0 11px -1px  $secondary_color;
   cursor: pointer;
   &:active {
-    box-shadow: 0 0 11px -3px #845cff;
+    box-shadow: 0 0 11px -3px  $secondary_color;
   }
 }
 label {
