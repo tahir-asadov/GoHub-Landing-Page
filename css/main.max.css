@@ -385,13 +385,38 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Sen", sans-serif;
-  font-size: 13px; }
+  font-size: 19px;
+  color: #525F7F; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Sen", sans-serif; }
+  font-family: "Sen", sans-serif;
+  color: #32325D; }
+
+h1 {
+  font-size: 48px; }
 
 a {
   color: #32325D; }
+
+p {
+  font-size: 19px; }
+  p.small {
+    font-size: 16px; }
+  p.large {
+    font-size: 23px; }
+
+ul.list {
+  margin: 0;
+  padding: 0; }
+  ul.list li {
+    list-style: none;
+    background: url("../img/Shape 9@1X.png") no-repeat center left;
+    line-height: 50px;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #32325D; }
+    ul.list li::marker {
+      margin-top: 5px; }
 
 /* ==========================================================================
 [General classes]
@@ -567,29 +592,15 @@ label {
 ========================================================================== */
 .band-header {
   background-color: #fff; }
-  .band-header .container {
-    display: grid;
-    grid-template-columns: 200px auto; }
 
 /* ==========================================================================
 [Content]
 ========================================================================== */
-.band-content .container {
-  display: grid;
-  grid-template-columns: 350px auto; }
-  .band-content .container .content-sidebar {
-    background: #fff; }
-  .band-content .container .content-body {
-    background: #fff; }
-
 /* ==========================================================================
 [Footer]
 ========================================================================== */
 .band-footer {
   background: #fff; }
-  .band-footer .container {
-    display: grid;
-    grid-template-columns: auto auto; }
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */

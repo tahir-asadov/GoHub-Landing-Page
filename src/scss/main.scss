@@ -7,15 +7,46 @@ body {
   height: 100%;
   margin: 0;
   font-family: $primary_font_family;
-  font-size: 13px;
+  font-size: 19px;
+  color: $primary_color_light;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary_font_family;
+  color: $primary_color;
+}
+h1 {
+  font-size: 48px;
 }
 a {
   color: $primary_color;
 }
+p {
+  font-size: 19px;
+  &.small {
+    font-size: 16px;
+  }
+  &.large {
+    font-size: 23px;
+  }
+}
 
+ul {
+  &.list {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      background: url('../img/Shape\ 9@1X.png') no-repeat center left;
+      line-height: 50px;
+      padding-left: 40px;
+      font-size: 16px;
+      color: $primary_color;
+      &::marker {
+        margin-top: 5px;
+      }
+    }
+  }
+}
 
 /* ==========================================================================
 [General classes]
@@ -160,8 +191,6 @@ label {
 .band-header {
   background-color: $header_bg_color;
   .container {
-    display: grid;
-    grid-template-columns: 200px auto;
   }
 }
 
@@ -169,14 +198,6 @@ label {
 [Content]
 ========================================================================== */
 .band-content .container {
-  display: grid;
-  grid-template-columns: 350px auto;
-  .content-sidebar {
-    background: $sidebar_bg_color;
-  }
-  .content-body {
-    background: $body_bg_color;
-  }
 }
 
 /* ==========================================================================
@@ -185,8 +206,6 @@ label {
 .band-footer {
   background: $footer_bg_color;
   .container {
-    display: grid;
-    grid-template-columns: auto auto;
   }
 }
 
