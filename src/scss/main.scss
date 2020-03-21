@@ -7,7 +7,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: $primary_font_family;
-  font-size: 19px;
+  font-size: 16px;
   color: $primary_color_light;
   background-image: url('./../img/header-bg.png');
   background-size: 100%;
@@ -23,19 +23,28 @@ h1 {
 }
 h2 {
   font-weight: normal;
+  font-size: 40px;
 }
 h3 {
   font-weight: normal;
+  font-size: 30px;
+}
+h4 {
+  letter-spacing: 0.5px;
 }
 a {
   color: $primary_color;
 }
 p {
   font-size: 19px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
   &.small {
+    line-height: 26px;
     font-size: 16px;
   }
   &.large {
+    line-height: 46px;
     font-size: 23px;
   }
 }
@@ -225,7 +234,7 @@ label {
     }
     .header-left {
       margin-top: 250px;
-      width: 50%;
+      width: 40%;
     }
   }
 }
@@ -238,15 +247,21 @@ label {
     margin-top: 50px;
     .about-items {
       .about-item {
-        width: 50%;
+        width: 45%;
         float: left;
+        margin-bottom: 50px;
         .ai-offset {
           padding: 50px;
           border-radius: 5px;
-          box-shadow: -11px 13px 17px -17px #32325d42;
         }
-        // &.ai-shadow {
-        // }
+        &.ai-shadow {
+          .ai-offset {
+            box-shadow: -11px 13px 39px -28px #32325d42;
+          }
+        }
+        &:nth-child(even) {
+          float: right;
+        }
       }
     }
   }
