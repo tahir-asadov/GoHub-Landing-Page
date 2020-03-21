@@ -399,6 +399,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 48px; }
 
+h2 {
+  font-weight: normal; }
+
+h3 {
+  font-weight: normal; }
+
 a {
   color: #32325D; }
 
@@ -616,6 +622,19 @@ label {
   .band-header .container .header-left {
     margin-top: 250px;
     width: 50%; }
+
+/* ==========================================================================
+[About us]
+========================================================================== */
+.band-about .container {
+  margin-top: 50px; }
+  .band-about .container .about-items .about-item {
+    width: 50%;
+    float: left; }
+    .band-about .container .about-items .about-item .ai-offset {
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: -11px 13px 17px -17px #32325d42; }
 
 /* ==========================================================================
 [Content]
