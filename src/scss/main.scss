@@ -110,7 +110,7 @@ textarea {
   box-shadow: 0 0 23px -16px #845cff;
   font-size: 21px;
 }
-[type="submit"], [type="button"], button, .button {
+[type="submit"], [type="button"], button, .button, .menu .active {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px 5px 5px 0;
@@ -384,6 +384,9 @@ label {
         position: absolute;
         right: 0;
         top: 17px;
+        i {
+          margin-left: 10px;
+        }
       }
       input {
         box-sizing: border-box;

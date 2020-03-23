@@ -475,7 +475,7 @@ textarea {
   box-shadow: 0 0 23px -16px #845cff;
   font-size: 21px; }
 
-[type="submit"], [type="button"], button, .button {
+[type="submit"], [type="button"], button, .button, .menu .active {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px 5px 5px 0;
@@ -487,7 +487,7 @@ textarea {
   font-size: 19px;
   box-shadow: 0 0 11px -1px #845CFF;
   cursor: pointer; }
-  [type="submit"]:active, [type="button"]:active, button:active, .button:active {
+  [type="submit"]:active, [type="button"]:active, button:active, .button:active, .menu .active:active {
     box-shadow: 0 0 11px -3px #845CFF; }
 
 label {
@@ -746,6 +746,8 @@ label {
         position: absolute;
         right: 0;
         top: 17px; }
+        .band-footer .footer-item form button i {
+          margin-left: 10px; }
       .band-footer .footer-item form input {
         box-sizing: border-box;
         width: 100%;
