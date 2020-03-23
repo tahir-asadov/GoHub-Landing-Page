@@ -4437,4 +4437,7 @@ $(document).ready(function () {
     type: 'image'
   });
   AOS.init();
+  $('.hamburger').click(function () {
+    $('.hamburger-menu').slideToggle();
+  });
 });

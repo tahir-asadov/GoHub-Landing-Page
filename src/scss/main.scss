@@ -76,19 +76,19 @@ ul {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: auto;
 }
 
 .base-grid {
   height: 100%;
-  // display: grid;
-  // grid-gap: 0;
-  // grid-template-rows: 100px auto 100px;
 }
 
 .clear {
+  clear: both;
+}
+.clear-mobile {
   clear: both;
 }
 
@@ -107,6 +107,8 @@ textarea {
   margin: 5px 5px 5px 0;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 0 23px -16px #845cff;
+  font-size: 21px;
 }
 [type="submit"], [type="button"], button, .button {
   display: inline-block;
@@ -211,9 +213,50 @@ label {
   .container {
     margin-top: 50px;
     .logo {
-      float: left;
+      float: none;
+    }
+    .hamburger {
+      float: right;
+      position: relative;
+      top: -50px;
+      background: $primary_color;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hamburger-menu {
+      display: none;
+      width: 100%;
+      position: absolute;
+      background: $primary_color;
+      border-radius: 5px;
+      box-shadow: 0px 6px 11px -5px $primary_color;
+      z-index: 3;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          a {
+            display: block;
+            text-align: center;
+            padding: 0;
+            color: white;
+            padding: 10px 0;
+            line-height: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+              background: white;
+              color: $primary_color;
+            }
+          }
+        }
+      }
     }
     .menu {
+      display: none;
       float: right;
       ul {
         margin: 0;
@@ -233,8 +276,11 @@ label {
       }
     }
     .header-left {
-      margin-top: 250px;
-      width: 40%;
+      width: 100%;
+      text-align: center;
+      button {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -247,8 +293,6 @@ label {
     margin-top: 50px;
     .about-items {
       .about-item {
-        width: 45%;
-        float: left;
         margin-bottom: 50px;
         .ai-offset {
           padding: 50px;
@@ -258,9 +302,6 @@ label {
           .ai-offset {
             box-shadow: -11px 13px 39px -28px #32325d42;
           }
-        }
-        &:nth-child(even) {
-          float: right;
         }
       }
     }
@@ -286,12 +327,14 @@ label {
   }
   .service-items {
     .service-item {
-      width: 25%;
-      float: left;
       text-align: center;
+      margin-bottom: 50px;
       .offset {
-        padding: 0 20px;
+        padding: 0 100px;
       }
+    }
+    .service-even {
+      clear: both;
     }
   }
 }
@@ -300,20 +343,22 @@ label {
 [What we do]
 ========================================================================== */
 .band-wwd {
+  background-image: url('./../img/Vector Smart Object1@1X (1).png');
+  background-position: bottom right;
+  background-position: 110% 70%;
+  background-repeat: no-repeat;
   .wwd-items {
     .wwd-item {
-      width: 50%;
-      float: left;
-      .wwd-item-left {
-        float: left;
-        width: 40%;
-      }
-      .wwd-item-right {
-        width: 40%;
-        float: right;
-      }
       .offset {
-        padding: 50px;
+        padding: 40px;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        line-height: 30px;
       }
     }
   }
@@ -325,9 +370,27 @@ label {
 .band-footer {
   background: $footer_bg_color;
   padding: 150px 0;
+  text-align: center;
   .footer-item {
-    width: 50%;
-    float: left;
+    text-align: left;
+    position: relative;
+    margin-bottom: 50px;
+    form {
+      margin-top: 38px;
+      button {
+        color: $primary_color;
+        background: none;
+        box-shadow: none;
+        position: absolute;
+        right: 0;
+        top: 17px;
+      }
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 25px;
+      }
+    }
   }
 }
 
@@ -337,10 +400,10 @@ label {
 ========================================================================== */
 .band-bottom {
   background: $bottom_bg_color;
-  color: #dedfe4;
+  color: $secondary_color_light;
   padding: 100px 0;
   a {
-    color: #dedfe4;
+    color: $secondary_color_light;
     text-decoration: none;
   }
   ul {
@@ -351,30 +414,45 @@ label {
       a {
         display: block;
         line-height: 50px;
+        text-align: center;
       }
     }
   }
   .bottom-item {
-    width: 25%;
-    float: left;
+    text-align: center;
+    margin-bottom: 50px;
   }
   .bottom-left {
     padding-top: 50px;
-    width: 30%;
-    float: left;
-    color: #555476;
+    text-align: center;
+    color: $bottom_color;
+    p {
+      font-size: 16px;
+      a {
+        font-size: 16px;
+      }
+    }
     a {
-      color: #555476;
+      color: $bottom_color;
     }
   }
   .bottom-right {
     padding-top: 50px;
-    width: 30%;
-    float: right;
-    color: #555476;
+    text-align: center;
+    color: $bottom_color;
     a {
-      color: #555476;
+      color: $bottom_color;
+      padding: 0 15px;
     }
+    p {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  .bottom-social-links a {
+    color: $bottom_color;
+    padding: 5px 10px;
   }
 }
 
@@ -385,23 +463,219 @@ label {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .clear-mobile {
+    display: none;
+  }
+  .band-header {
+    .container {
+      .header-left {
+        margin-top: 50px;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  
+  .band-header {
+    .container {
+      .header-left {
+        margin-top: 100px;
+        width: 80%;
+      }
+    }
+  }
+  .band-about {
+    .container {
+      .about-items {
+        .about-item {
+          width: 45%;
+          float: left;
+          &:nth-child(even) {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .band-services {
+    .service-items {
+      .service-item {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+  
+  .band-bottom {
+    .bottom-item {
+      width: 50%;
+      float: left;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .bottom-right, .bottom-left {
+      width: 50%;
+      float: left;
+      p {
+        text-align: center;
+      }
+    }
+    ul {
+      li {
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+    
+
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .band-header {
+    .container {
+      .logo {
+        float: left;
+      }
+      .menu {
+        display: block;
+      }
+      .hamburger {
+        display: none;
+      }
+      .hamburger-menu {
+        display: none !important;;
+      }
+      .header-left {
+        margin-top: 150px;
+        width: 40%;
+      }
+    }
+  }
+  .band-services {
+    .service-items {
+      .service-item {
+        width: 25%;
+        float: left;
+        .offset {
+          padding: 0 20px;
+        }
+      }
+      .service-even {
+        display: none;
+      }
+    }
+  }
+
+  
+  .band-wwd {
+    .wwd-items {
+      .wwd-item {
+        width: 50%;
+        float: left;
+        
+        .wwd-item-left {
+          float: left;
+          width: 50%;
+        }
+        .wwd-item-right {
+          width: 50%;
+          float: right;
+        }
+        
+        &.wwd-i-right{
+          float: right;
+        }
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .band-footer {
+    .footer-item {
+      width: 50%;
+      float: left;
+      form {
+        button {
+          top: 55px;
+        }
+      }
+    }
+  }
+  .band-bottom {
+    ul {
+      li {
+        a {
+          text-align: center;
+        }
+      }
+    }
     
+    .bottom-left {
+      p {
+        text-align: center;
+      }
+      padding-top: 50px;
+    }
+    .bottom-right {
+      p {
+        text-align: center;
+      }
+      padding-top: 50px;
+    }
+  }
+  
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  
+  .band-header {
+    .container {
+      .header-left {
+        margin-top: 200px;
+        width: 40%;
+      }
+    }
+  }
+  .band-bottom {
+    .bottom-item {
+      width: 25%;
+      float: left;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+    .bottom-left {
+      p {
+        text-align: left;
+      }
+    }
+    .bottom-right {
+      p {
+        text-align: right;
+      }
+    }
+    ul {
+      li {
+        a {
+          text-align: left;
+        }
+      }
+    }
+  }
    .container {
-       width: 1200px;
+       width: 1100px;
    }
 }
 
